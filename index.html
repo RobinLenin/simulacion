@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Juego Pirinola</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="tableToExcel.js"></script>
+  <style type="text/css">
+  	table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	}
+	table td{
+	border: 1px solid black;
+	padding: 1px;
+	}
+	table th{
+	border: 1px solid black;
+	padding: 5px;
+	}
+  </style>
+</head>
+<body>
+
+<h1 class="text-primary text-center">Simulación</h1>
+<div class="container">
+
+    <div class="col-sm">
+      
+    </div>
+    <div class="col-sm">
+      <div  class="alert alert-light">
+<p class="text-info">Juego de la Pirinola</p>
+<div class="text-danger" id="infor">Necesitas crear mínimo 3 jugadores para empezar</div>
+<br>
+<form name="formulario">
+    <input type="button" name="Crear Jugador" value="Crear Jugador" id="crearj" class="btn btn-info">
+  <div class="text-primary" id="info"></div>
+  <div class="text-primary" id="terminar"></div>
+  <div class="text-primary" id="alcohol"></div>
+</form>
+</div>
+    </div>
+    <div class="col-sm">
+      
+    </div>
+  </div>
+
+<br>
+<br>
+<div  class="alert alert-light">
+<table id = "testTable" summary = "Ejercicio de simulación números pseudoaleatorios." rules = "groups" frame = "hsides" border = "2"> <caption> JUEGO PIRINOLA</caption> <colgante align = "center"> </colgroup> <colgroup align = "left"> </colgroup> <colgroup span = "2" align = "center"> </colgroup> <colgroup span = "3" align = "center"> </colgroup><thead valign = "top"><th>#</th><th>Nombre</th><th>Cantidad alcohol</th><th>Vasos</th></thead><tbody id="cuerpo"></tbody></table>
+</div>
+ <br>
+
+</body>
+</html>
+
+
